@@ -69,10 +69,7 @@ nav .right ul li a {
 
 nav .right .link:hover {
     color: #E74C3C;
-    border-bottom: 3px solid #E74C3C;
     cursor: pointer;
-    position: relative;
-    top: -3px;
     transition: all 300ms ease;
 }
 
@@ -155,7 +152,7 @@ nav .right .btn:hover {
 
 
 .presentation .abstract-presentation h1 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 600;
     line-height: 40px;
     margin-bottom: 32px;
@@ -200,7 +197,7 @@ nav .right .btn:hover {
 =====================================================*/
 
 .logo {
-    margin: 1rem;
+    margin-left: 1rem;
 }
 
 .logo span {
@@ -216,7 +213,7 @@ nav .right .btn:hover {
 form {
     width: 500px;
     margin: auto;
-    margin-top: 30px;
+    margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.6);
     padding: 50px;
     border-radius: 20px;
