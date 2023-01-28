@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 32, 69, 0.9);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+=====================NAVBAR & HEADER==============
+==================================================*/
+
+header nav {
+    padding: 20px 3%;
+    background-color: rgb(0, 32, 69);
+    border: none;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header nav span {
+    margin: 0px 3px;
+    color: #E74C3C;
+    text-transform: uppercase;
+    transition: border-bottom 1s;
+}
+
+header nav span:hover {
+    border-bottom: 3px solid #E74C3C;
+}
+
+header nav h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+/* nav .right {
+    margin-right: 5rem;
+} */
+
+nav .right ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .right .link {
+    margin: 0 2rem;
+    transition: all 300ms ease;
+}
+
+nav .right ul li a {
+    color: #fff;
+    font-size: 15px;
+}
+
+nav .right .link:hover {
+    color: #E74C3C;
+    border-bottom: 3px solid #E74C3C;
+    cursor: pointer;
+    position: relative;
+    top: -3px;
+    transition: all 300ms ease;
+}
+
+
+nav .right .btn:hover {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #E74C3C;
+    background-color: #E74C3C;
+    border-radius: 15px;
+    transition: all 300ms ease;
+
+}
+
+.user-profil {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.menu-user {
+    width: 140px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    z-index: 999;
+    margin-top: 1px;
+    background-color: rgb(0, 32, 69);
+    border-radius: 4px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: max-height 0.3s ease-in-out;
+
+}
+
+.menu-user.open-menu {
+    max-height: 140px;
+    opacity: 1;
+    z-index: 999;
+}
+
+
+
+.menu-user ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-user ul li {
+    padding: 18px;
+    border-bottom: 1px solid #fff;
+}
+
+.menu-user ul li a:hover {
+    color: #E74C3C;
+}
+
+.right h5 {
+    margin-left: 0.7rem;
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+============END NAVBAR & HEADER===========================
+=====================================*/
+
+
+.presentation {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 5%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+
+.presentation .abstract-presentation h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 32px;
+}
+
+.presentation .btn_create {
+    background-color: #E74C3C;
+    padding: 12px 50px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.presentation .btn_create:hover {
+    background-color: #f75644;
+    color: #fff;
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+
+.presentation .abstract-presentation p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.blog-img {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    transform: translate(-50%);
+    height: auto;
+}
+
+
+
+
+/* =============================================
+====================CONNEXION & INSCRIPTION===========
+=====================================================*/
+
+.logo {
+    margin: 1rem;
+}
+
+.logo span {
+    color: #E74C3C;
+    text-transform: uppercase;
+    transition: border-bottom 1s;
+}
+
+.logo span:hover {
+    border-bottom: 3px solid #E74C3C;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(0, 32, 69);
+}
+
+form p,
+label {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+
+}
+
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands {
+    margin: 20px 5px;
+    border: 1px solid;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.fa-brands:hover {
+    color: rgb(0, 32, 69);
+    cursor: pointer;
+    transition: 5ms ease-in;
+
+}
+
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 0.75rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #F0F0F0;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 32, 69);
+    color: #fff;
+    transition: 5ms ease-in;
+}
+
+
+
+/* ==============================================
+===================BLOGS===============================
+=================================*/
+.search-bar {
+    width: 10%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 32, 69);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 0 10px;
+
+}
+
+.search-bar:hover {
+    width: 400px;
+    transition: 0.8s;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.search-bar a .fa {
+    font-size: 1.15rem;
+    color: #E74C3C;
+}
+
+
+.photo-article img {
+    width: 100%;
+    height: 250px;
+    border: 10px solid #f75644;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.photo-article {
+    width: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(10, 62, 121);
+    box-shadow: 0 0.5rem 1.2rem rgb(10, 62, 121);
+    padding: 0.9rem;
+    width: 330px;
+    height: auto;
+}
+
+
+
+.serie-blog span {
+    width: 50%;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    background-color: #ec6253;
+    text-align: center;
+    font-weight: 600;
+    padding: 8px;
+    text-align: center;
+    margin: 0.9rem 0;
+
+}
+
+.serie-blog span:hover {
+    background-color: #f47e71;
+    color: #fff;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+
+
+.serie-blog h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.serie-blog p {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+.user .photo-user img {
+    margin: 1rem 1rem 1rem 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.serie-blog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* ================================================
+=================footer===============================
+=================================*/
+
+footer {
+    background-color: rgb(0, 32, 69);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.container {
+    color: rgba(0, 0, 0, 0.783);
+    text-align: center;
+    padding: 10px;
+
+}
+
+.container h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+.container .socials .fa {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.783);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.container .socials .fa:hover {
+    border: 1px solid #fff;
+    border: 1px solid rgb(145, 132, 132);
+    box-shadow: 0rem 0.5rem 1rem rgb(145, 132, 132);
+    border-radius: 20%;
+    background-color: #fff;
+    color: black;
+    transition: all 300ms ease;
+
+}
